@@ -6,272 +6,209 @@
 	objectVersion = 42;
 	objects = {
 
-/* Begin PBXApplicationTarget section */
-		7DFEBF5306F5D4C0005412EE /* texture0 */ = {
-			isa = PBXApplicationTarget;
-			buildConfigurationList = 7DBC6AAB0E5ADD9100D24C04 /* Build configuration list for PBXApplicationTarget "texture0" */;
-			buildPhases = (
-				7DFEBF4E06F5D4C0005412EE /* Headers */,
-				7DFEBF4F06F5D4C0005412EE /* Resources */,
-				7DFEBF5006F5D4C0005412EE /* Sources */,
-				7DFEBF5106F5D4C0005412EE /* Frameworks */,
-				7DFEBF5206F5D4C0005412EE /* Rez */,
-			);
-			dependencies = (
-			);
-			name = texture0;
-			productInstallPath = "$(USER_APPS_DIR)";
-			productName = texture0;
-			productReference = 7DFEBF5406F5D4C0005412EE /* texture0.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string></string>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
-	<key>CFBundleIconFile</key>
-	<string></string>
-	<key>CFBundleIdentifier</key>
-	<string></string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string></string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string></string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>0.0.1d1</string>
-</dict>
-</plist>
-";
-		};
-/* End PBXApplicationTarget section */
-
 /* Begin PBXBuildFile section */
-		7DFEBF5806F5D4CE005412EE /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFEBF5706F5D4CE005412EE /* GLUT.framework */; };
-		7DFEBF7106F5D50F005412EE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFEBF7006F5D50F005412EE /* OpenGL.framework */; };
-		7DFEBF7506F5D52A005412EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DFEBF7406F5D52A005412EE /* Foundation.framework */; };
-		7DFEBF8C06F5D547005412EE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEBF8706F5D547005412EE /* main.cpp */; };
-		7DFEBF8D06F5D547005412EE /* tire.psd in Resources */ = {isa = PBXBuildFile; fileRef = 7DFEBF8806F5D547005412EE /* tire.psd */; };
-		7DFEBF8E06F5D547005412EE /* tire.raw in Resources */ = {isa = PBXBuildFile; fileRef = 7DFEBF8906F5D547005412EE /* tire.raw */; };
-		7DFEBF8F06F5D547005412EE /* trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DFEBF8A06F5D547005412EE /* trackball.cpp */; };
-		7DFEBF9006F5D547005412EE /* trackball.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DFEBF8B06F5D547005412EE /* trackball.h */; };
+		7D09129E159CA039001EC856 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D09129D159CA039001EC856 /* main.cpp */; };
+		7D0912A1159CA049001EC856 /* trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D0912A0159CA049001EC856 /* trackball.cpp */; };
+		7D0912A3159CA056001EC856 /* tire.raw in Resources */ = {isa = PBXBuildFile; fileRef = 7D0912A2159CA052001EC856 /* tire.raw */; };
+		7D7AF85F1222C8CC003A0434 /* opengl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AF85E1222C8CC003A0434 /* opengl.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7DFEBF5406F5D4C0005412EE /* texture0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = texture0.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DFEBF5706F5D4CE005412EE /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
-		7DFEBF7006F5D50F005412EE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		7DFEBF7406F5D52A005412EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		7DFEBF8706F5D547005412EE /* main.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		7DFEBF8806F5D547005412EE /* tire.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = tire.psd; sourceTree = "<group>"; };
-		7DFEBF8906F5D547005412EE /* tire.raw */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = text; path = tire.raw; sourceTree = "<group>"; };
-		7DFEBF8A06F5D547005412EE /* trackball.cpp */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.cpp.cpp; path = trackball.cpp; sourceTree = "<group>"; };
-		7DFEBF8B06F5D547005412EE /* trackball.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
+		7D09129D159CA039001EC856 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7D09129F159CA041001EC856 /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
+		7D0912A0159CA049001EC856 /* trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.cpp.cpp; path = trackball.cpp; sourceTree = "<group>"; };
+		7D0912A2159CA052001EC856 /* tire.raw */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = text; path = tire.raw; sourceTree = "<group>"; };
+		7D1E90EE1123E36C005E6C75 /* texture0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = texture0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D1E90F11123E36C005E6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7AF85E1222C8CC003A0434 /* opengl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = opengl.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DFEBF5106F5D4C0005412EE /* Frameworks */ = {
+		7D1E90EC1123E36C005E6C75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFEBF5806F5D4CE005412EE /* GLUT.framework in Frameworks */,
-				7DFEBF7106F5D50F005412EE /* OpenGL.framework in Frameworks */,
-				7DFEBF7506F5D52A005412EE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DFEBF4606F5D4AC005412EE = {
+		7D1E90D81123E2F7005E6C75 = {
 			isa = PBXGroup;
 			children = (
-				7DFEBF8706F5D547005412EE /* main.cpp */,
-				7DFEBF8806F5D547005412EE /* tire.psd */,
-				7DFEBF8906F5D547005412EE /* tire.raw */,
-				7DFEBF8A06F5D547005412EE /* trackball.cpp */,
-				7DFEBF8B06F5D547005412EE /* trackball.h */,
-				7DFEBF5706F5D4CE005412EE /* GLUT.framework */,
-				7DFEBF7006F5D50F005412EE /* OpenGL.framework */,
-				7DFEBF7406F5D52A005412EE /* Foundation.framework */,
-				7DFEBF5506F5D4C0005412EE /* Products */,
+				7D09129D159CA039001EC856 /* main.cpp */,
+				7D09129F159CA041001EC856 /* trackball.h */,
+				7D0912A0159CA049001EC856 /* trackball.cpp */,
+				7D0912A2159CA052001EC856 /* tire.raw */,
+				7D1E90EF1123E36C005E6C75 /* Products */,
+				7D1E90F11123E36C005E6C75 /* Info.plist */,
+				7D7AF85E1222C8CC003A0434 /* opengl.icns */,
 			);
 			sourceTree = "<group>";
 		};
-		7DFEBF5506F5D4C0005412EE /* Products */ = {
+		7D1E90EF1123E36C005E6C75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DFEBF5406F5D4C0005412EE /* texture0.app */,
+				7D1E90EE1123E36C005E6C75 /* texture0.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		7DFEBF4E06F5D4C0005412EE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7DFEBF9006F5D547005412EE /* trackball.h in Headers */,
+/* Begin PBXNativeTarget section */
+		7D1E90ED1123E36C005E6C75 /* texture0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "texture0" */;
+			buildPhases = (
+				7D1E90EA1123E36C005E6C75 /* Resources */,
+				7D1E90EB1123E36C005E6C75 /* Sources */,
+				7D1E90EC1123E36C005E6C75 /* Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = texture0;
+			productName = texture0;
+			productReference = 7D1E90EE1123E36C005E6C75 /* texture0.app */;
+			productType = "com.apple.product-type.application";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7DFEBF4A06F5D4AC005412EE /* Project object */ = {
+		7D1E90DA1123E2F7005E6C75 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 7DBC6AAF0E5ADD9100D24C04 /* Build configuration list for PBXProject "texture0" */;
+			buildConfigurationList = 7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "texture0" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
-			mainGroup = 7DFEBF4606F5D4AC005412EE;
-			productRefGroup = 7DFEBF5506F5D4C0005412EE /* Products */;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 7D1E90D81123E2F7005E6C75;
+			productRefGroup = 7D1E90EF1123E36C005E6C75 /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
-				7DFEBF5306F5D4C0005412EE /* texture0 */,
+				7D1E90ED1123E36C005E6C75 /* texture0 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7DFEBF4F06F5D4C0005412EE /* Resources */ = {
+		7D1E90EA1123E36C005E6C75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFEBF8D06F5D547005412EE /* tire.psd in Resources */,
-				7DFEBF8E06F5D547005412EE /* tire.raw in Resources */,
+				7D0912A3159CA056001EC856 /* tire.raw in Resources */,
+				7D7AF85F1222C8CC003A0434 /* opengl.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXRezBuildPhase section */
-		7DFEBF5206F5D4C0005412EE /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		7DFEBF5006F5D4C0005412EE /* Sources */ = {
+		7D1E90EB1123E36C005E6C75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DFEBF8C06F5D547005412EE /* main.cpp in Sources */,
-				7DFEBF8F06F5D547005412EE /* trackball.cpp in Sources */,
+				7D09129E159CA039001EC856 /* main.cpp in Sources */,
+				7D0912A1159CA049001EC856 /* trackball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7DBC6AAC0E5ADD9100D24C04 /* Development */ = {
+		7D1E90DB1123E2F7005E6C75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = texture0;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
 			};
-			name = Development;
+			name = Debug;
 		};
-		7DBC6AAD0E5ADD9100D24C04 /* Deployment */ = {
+		7D1E90DC1123E2F7005E6C75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = texture0;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
+			};
+			name = Release;
+		};
+		7D1E90F21123E36D005E6C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					GLUT,
+					"-framework",
+					OpenGL,
 				);
-				WRAPPER_EXTENSION = app;
-			};
-			name = Deployment;
-		};
-		7DBC6AAE0E5ADD9100D24C04 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
 				PRODUCT_NAME = texture0;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
+			};
+			name = Debug;
+		};
+		7D1E90F31123E36D005E6C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					GLUT,
+					"-framework",
+					OpenGL,
 				);
-				WRAPPER_EXTENSION = app;
+				PREBINDING = NO;
+				PRODUCT_NAME = texture0;
+				ZERO_LINK = NO;
 			};
-			name = Default;
-		};
-		7DBC6AB00E5ADD9100D24C04 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Development;
-		};
-		7DBC6AB10E5ADD9100D24C04 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Deployment;
-		};
-		7DBC6AB20E5ADD9100D24C04 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7DBC6AAB0E5ADD9100D24C04 /* Build configuration list for PBXApplicationTarget "texture0" */ = {
+		7D1E90DD1123E2F7005E6C75 /* Build configuration list for PBXProject "texture0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DBC6AAC0E5ADD9100D24C04 /* Development */,
-				7DBC6AAD0E5ADD9100D24C04 /* Deployment */,
-				7DBC6AAE0E5ADD9100D24C04 /* Default */,
+				7D1E90DB1123E2F7005E6C75 /* Debug */,
+				7D1E90DC1123E2F7005E6C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
-		7DBC6AAF0E5ADD9100D24C04 /* Build configuration list for PBXProject "texture0" */ = {
+		7D1E90F41123E36D005E6C75 /* Build configuration list for PBXNativeTarget "texture0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DBC6AB00E5ADD9100D24C04 /* Development */,
-				7DBC6AB10E5ADD9100D24C04 /* Deployment */,
-				7DBC6AB20E5ADD9100D24C04 /* Default */,
+				7D1E90F21123E36D005E6C75 /* Debug */,
+				7D1E90F31123E36D005E6C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7DFEBF4A06F5D4AC005412EE /* Project object */;
+	rootObject = 7D1E90DA1123E2F7005E6C75 /* Project object */;
 }
