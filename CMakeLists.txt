@@ -45,7 +45,7 @@ if(WIN32)
         file(DOWNLOAD https://www.khronos.org/registry/EGL/api/KHR/khrplatform.h ${GLEXT_DIR}/KHR/khrplatform.h)
     endif()
     
-    target_include_directories(texture0 PRIVATE ${GLEXT_DIR})
+    target_include_directories(texture0 PRIVATE ${GLEXT_DIR} ${freeglut_SOURCE_DIR}/include/GL)
     
     # 共有ライブラリと OpenGL をリンク
     target_link_libraries(texture0 PRIVATE freeglut opengl32.lib glu32.lib)
@@ -85,13 +85,13 @@ elseif(UNIX AND NOT APPLE)
     pkg_check_modules(FREEGLUT REQUIRED freeglut)
     
     target_compile_options(texture0 PRIVATE ${FREEGLUT_CFLAGS})
-    target_link_libraries(texture0 PRIVATE ${FREEGLUT_LIBRARIES} GL m)
+    target_link_libraries(texture0 PRIVATE ${FREEGLUT_LIBRARIES} GL GLU m)
     
     # 実行時に読み込めるよう、ビルド時に tire.raw を実行ファイルと同じ場所へコピー
     add_custom_command(
         TARGET texture0 POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
-            ${CMAKE_CURRENT_SOURCE_DIR}/tire.raw
-            $<TARGET_FILE_DIR:texture0>
+            "${CMAKE_CURRENT_SOURCE_DIR}/tire.raw"
+            "$<TARGET_FILE_DIR:texture0>"
     )
 endif()
