@@ -68,9 +68,9 @@ cd build\Debug
 texture0.exe
 ```
 
-- **macOS**: Xcode 上で左上の「Run（再生ボタン）」をクリックするのが楽です。これにより texture0.app アプリケーションバンドルとして自動的に実行されます。アプリケーションバンドルを直接起動するなら、Finder から build/Debug/texture0.app をダブルクリックするか、ターミナルから open build/Debug/texture0.app を実行します[^1]。
+- **macOS**: Xcode 上で左上の「Run（再生ボタン）」をクリックするのが楽です。これにより texture0.app アプリケーションバンドルとして自動的に実行されます。アプリケーションバンドルを直接起動するなら、Finder から build/Debug/texture0.app をダブルクリックするか、ターミナルから open build/Debug/texture0.app を実行します[^2]。
 
-[^1]: この場合はエラーメッセージ等が表示されません。
+[^2]: この場合はエラーメッセージ等が表示されません。
 
 - **Ubuntu Linux**: ターミナルから以下のコマンドで実行ファイル（バイナリ）を直接起動します。
 
