@@ -6,9 +6,8 @@
 
 - [テクスチャ第１回：画像の読み込み](https://tokoik.github.io/blog/opengl/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3/2004/09/13/texture.html)
 
-<div style="text-align: center;">
-![1枚の四角形を描く](texture0.pdf)
-</div>
+<img src="texture0.pdf" style="display: block; margin: 0 auto;"
+width="256" height="256" alt="1枚の四角形を描く" />
 
 3DCG において、物体の表面に画像（テクスチャ）を貼り付けることで、少ない頂点数でリアルな質感を表現する技術をテクスチャマッピングと呼びます。本プロジェクトは、その手順を段階的に学ぶための最初の雛形プログラムです。
 
