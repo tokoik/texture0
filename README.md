@@ -12,8 +12,9 @@
 
 マウスのドラッグ操作によって、表示されている四角形をぐるぐると回転させることができます。
 
-<img src="texture0.gif" style="display: block; margin: 0 auto;"
-width="256" height="256" alt="1枚の四角形を描く" />
+<div style="text-align: center;">
+<img src="texture0.gif" width="256" height="256" alt="1枚の四角形" />
+</div>
 
 ## 2. ビルド方法
 
