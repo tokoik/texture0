@@ -45,7 +45,7 @@ if(WIN32)
         file(DOWNLOAD https://www.khronos.org/registry/EGL/api/KHR/khrplatform.h ${GLEXT_DIR}/KHR/khrplatform.h)
     endif()
     
-    target_include_directories(texture0 PRIVATE ${GLEXT_DIR} ${freeglut_SOURCE_DIR}/include/GL)
+    target_include_directories(texture0 PRIVATE ${GLEXT_DIR} ${freeglut_SOURCE_DIR}/include)
     
     # 共有ライブラリと OpenGL をリンク
     target_link_libraries(texture0 PRIVATE freeglut opengl32.lib glu32.lib)
@@ -61,7 +61,7 @@ if(WIN32)
 
     # Visual Studio のスタートアッププロジェクトを texture0 に設定
     set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT texture0)    
-    set_target_properties(texture0 PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:texture0>")
+    set_target_properties(texture0 PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 
 elseif(APPLE)
     # GLUT.framework と OpenGL.framework を検索

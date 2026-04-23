@@ -1,21 +1,29 @@
-﻿#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#if defined(WIN32)
-//#  pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
-#  include "glut.h"
-#elif defined(__APPLE__) || defined(MACOSX)
+﻿#if defined(__APPLE__) || defined(MACOSX)
 #  include <GLUT/glut.h>
 #else
+#  if defined(_WIN32)
+#    define _CRT_SECURE_NO_WARNINGS
+//#    pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
+#  endif
 #  include <GL/glut.h>
 #endif
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 /*
 ** 光源
 */
-static const GLfloat lightpos[] = { 0.0, 0.0, 1.0, 0.0 }; /* 位置　　　 */
-static const GLfloat lightcol[] = { 1.0, 1.0, 1.0, 1.0 }; /* 直接光強度 */
-static const GLfloat lightamb[] = { 0.1, 0.1, 0.1, 1.0 }; /* 環境光強度 */
+static const GLfloat lightpos[] = { 0.0f, 0.0f, 1.0f, 0.0f }; /* 位置　　　 */
+static const GLfloat lightcol[] = { 1.0f, 1.0f, 1.0f, 1.0f }; /* 直接光強度 */
+static const GLfloat lightamb[] = { 0.1f, 0.1f, 0.1f, 1.0f }; /* 環境光強度 */
+
+/*
+** テクスチャ
+*/
+#define TEXWIDTH  256                               /* テクスチャの幅　　　 */
+#define TEXHEIGHT 256                               /* テクスチャの高さ　　 */
+static const char texture1[] = "tire.raw";          /* テクスチャファイル名 */
 
 /*
 ** 初期化
@@ -23,10 +31,10 @@ static const GLfloat lightamb[] = { 0.1, 0.1, 0.1, 1.0 }; /* 環境光強度 */
 static void init(void)
 {
   /* 初期設定 */
-  glClearColor(0.3, 0.3, 1.0, 0.0);
+  glClearColor(0.3f, 0.3f, 1.0f, 0.0f);
   glEnable(GL_DEPTH_TEST);
   glDisable(GL_CULL_FACE);
-  
+
   /* 光源の初期設定 */
   glEnable(GL_LIGHTING);
   glEnable(GL_LIGHT0);
@@ -41,10 +49,10 @@ static void init(void)
 static void scene(void)
 {
   static const GLfloat color[] = { 1.0, 1.0, 1.0, 1.0 };  /* 材質 (色) */
-  
+
   /* 材質の設定 */
   glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, color);
-  
+
   /* １枚の４角形を描く */
   glNormal3d(0.0, 0.0, 1.0);
   glBegin(GL_QUADS);
@@ -60,29 +68,30 @@ static void scene(void)
 ** GLUT のコールバック関数 **
 ****************************/
 
-#include "trackball.h" /* トラックボール処理用関数の宣言 */
+/* トラックボール処理用関数の宣言 */
+#include "trackball.h"
 
 static void display(void)
 {
-  /* モデルビュー変換行列の初期化 */
+  /* モデルビュー変換行列の設定 */
   glMatrixMode(GL_MODELVIEW);
   glLoadIdentity();
-  
+
   /* 光源の位置を設定 */
   glLightfv(GL_LIGHT0, GL_POSITION, lightpos);
-  
+
   /* 視点の移動（物体の方を奥に移動）*/
   glTranslated(0.0, 0.0, -3.0);
-  
+
   /* トラックボール処理による回転 */
   glMultMatrixd(trackballRotation());
-  
+
   /* 画面クリア */
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-  
+
   /* シーンの描画 */
   scene();
-  
+
   /* ダブルバッファリング */
   glutSwapBuffers();
 }
@@ -91,13 +100,13 @@ static void resize(int w, int h)
 {
   /* トラックボールする範囲 */
   trackballRegion(w, h);
-  
+
   /* ウィンドウ全体をビューポートにする */
   glViewport(0, 0, w, h);
-  
+
   /* 透視変換行列の指定 */
   glMatrixMode(GL_PROJECTION);
-  
+
   /* 透視変換行列の初期化 */
   glLoadIdentity();
   gluPerspective(60.0, (double)w / (double)h, 1.0, 100.0);
