@@ -61,11 +61,23 @@ cmake --build .
 
 各OSとも、ビルド後に生成されるバイナリディレクトリ (build) やそのサブフォルダから起動します。（※ CMake の設定により、Windows や Xcode では Debug などのフォルダ下に実行ファイルが置かれることがあります）
 
-- **Windows**: build\Debug\texture0.exe をダブルクリックするか、コマンドプロンプトから .\build\Debug\texture0.exe を実行します。
+- **Windows**: Visual Studio 上で「ローカル Windows デバッガー」をクリックして実行するか、またはコマンドプロンプトから以下のコマンドで起動します。
 
-- **macOS**: アプリケーションバンドルとしてビルドされるため、Finder から build/Debug/texture0.app をダブルクリックして起動するか、ターミナルから open build/Debug/texture0.app を実行します。
+```cmd
+cd build\Debug
+texture0.exe
+```
 
-- **Ubuntu Linux**: ターミナルから ./build/texture0 を実行します。
+- **macOS**: Xcode 上で左上の「Run（再生ボタン）」をクリックするのが楽です。これにより texture0.app アプリケーションバンドルとして自動的に実行されます。アプリケーションバンドルを直接起動するなら、Finder から build/Debug/texture0.app をダブルクリックするか、ターミナルから open build/Debug/texture0.app を実行します[^1]。
+
+[^1]: この場合はエラーメッセージ等が表示されません。
+
+- **Ubuntu Linux**: ターミナルから以下のコマンドで実行ファイル（バイナリ）を直接起動します。
+
+```bash
+cd build
+./texture0
+```
 
 ### 3.2 操作方法
 
