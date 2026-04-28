@@ -4,7 +4,7 @@
 
 このプログラムは、OpenGL における「テクスチャマッピング (Texture Mapping)」の基礎を学ぶための、学生向けのサンプルプログラムです。本プログラムは、以下のブログ記事の解説に沿って学習を進めるための雛形として提供されています。
 
-- [テクスチャ第１回：画像の読み込み](https://tokoik.github.io/blog/opengl/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3/2004/09/13/texture.html)
+- [テクスチャ:第１回 画像の読み込み](https://tokoik.github.io/blog/opengl/%E3%83%86%E3%82%AF%E3%82%B9%E3%83%81%E3%83%A3/2004/09/13/texture.html)
 
 3DCG において、物体の表面に画像（テクスチャ）を貼り付けることで、少ない頂点数でリアルな質感を表現する技術をテクスチャマッピングと呼びます。本プロジェクトは、その手順を段階的に学ぶための最初の雛形プログラムです。
 
@@ -12,9 +12,7 @@
 
 マウスのドラッグ操作によって、表示されている四角形をぐるぐると回転させることができます。
 
-<div style="text-align: center;">
-<img src="texture0.gif" width="256" height="256" alt="1枚の四角形" />
-</div>
+![1枚の四角形](https://tokoik.github.io/blog/assets/images/texture0.gif)
 
 ## 2. ビルド方法
 
