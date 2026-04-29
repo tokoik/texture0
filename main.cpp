@@ -27,7 +27,7 @@ static const GLfloat lightamb[] = { 0.1f, 0.1f, 0.1f, 1.0f }; /* 環境光強度
 */
 #define TEXWIDTH  256                               /* テクスチャの幅　　　 */
 #define TEXHEIGHT 256                               /* テクスチャの高さ　　 */
-static const char texture1[] = "tire.raw";          /* テクスチャファイル名 */
+static const char texture_file[] = "tire.raw";      /* テクスチャファイル名 */
 
 /*
 ** 初期化
@@ -86,7 +86,7 @@ static void display(void)
   /* 視点の移動（物体の方を奥に移動）*/
   glTranslated(0.0, 0.0, -3.0);
 
-  /* トラックボール処理による回転 */
+  /* トラックボール処理で図形を回転 */
   glMultMatrixd(trackballRotation());
 
   /* 画面クリア */
