@@ -51,7 +51,7 @@ static void init(void)
 */
 static void scene(void)
 {
-  static const GLfloat color[] = { 1.0, 1.0, 1.0, 1.0 };  /* 材質 (色) */
+  static const GLfloat color[] = { 1.0f, 1.0f, 1.0f, 1.0f };   /* 材質 (色) */
 
   /* 材質の設定 */
   glMaterialfv(GL_FRONT, GL_AMBIENT_AND_DIFFUSE, color);
@@ -111,7 +111,7 @@ static void resize(int w, int h)
 
   /* 透視変換行列の初期化 */
   glLoadIdentity();
-  gluPerspective(60.0, (double)w / (double)h, 1.0, 100.0);
+  gluPerspective(60.0, (double)w / (double)h, 0.1, 10.0);
 }
 
 static void idle(void)
