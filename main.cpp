@@ -1,7 +1,6 @@
 ﻿#if defined(__APPLE__)
 #  define GL_SILENCE_DEPRECATION
 #  include <GLUT/glut.h>
-#  include <OpenGL/glext.h>
 #else
 #  if defined(_WIN32)
 //#    pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
@@ -9,7 +8,6 @@
 #    define _CRT_SECURE_NO_WARNINGS
 #  endif
 #  include <GL/glut.h>
-#  include <GL/glext.h>
 #endif
 #include <stdio.h>
 #include <stdlib.h>
