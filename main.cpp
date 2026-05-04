@@ -13,6 +13,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+/* トラックボール処理用関数の宣言 */
+#include "trackball.h"
+
 /*
 ** 光源
 */
@@ -69,9 +72,6 @@ static void scene(void)
 /****************************
 ** GLUT のコールバック関数 **
 ****************************/
-
-/* トラックボール処理用関数の宣言 */
-#include "trackball.h"
 
 static void display(void)
 {
